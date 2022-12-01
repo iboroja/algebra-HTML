@@ -8,31 +8,162 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="header__inner">
-        <figure class="header__figure">
-          <img class="header__image" src="./images/logo.jpg" alt="logo" />
-        </figure>
+    <table class="table1">
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+      </tr>
+    </table>
 
-        <nav class="header__nav">
-          <a href="#" class="header__link">home</p>
-          <a href="#" class="header__link">about</p>
-          <a href="#" class="header__link">contact us</p>
-        </nav>
-      </div>
-    </header>
+    <hr />
 
-    <main>
-      <section class="hero">
-        <img class="hero__image" src="./images/hero.png" alt="hero image">
-        <div class="hero__overlay"></div>
-        <div class="hero__content">
-          <h1 class="hero__title">Welcome to my Web</h1>
-          <p class="hero__subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam unde, sint tempora consectetur ipsam, aut rem ex quidem velit beatae minus quibusdam saepe deserunt. Ab laudantium eius placeat ipsum minima!</p>
-        </div>
-      </section>
-    </main>
+    <table class="table_border">
 
-    <footer></footer>
+      <caption>
+        Rezultati završnog ispita
+      </caption>
+      <thead>
+        <tr>
+          <th>Redni broj</th>
+          <th>Ime</th>
+          <th>Prezime</th>
+          <th>Zanimanje</th>
+          <th>Broj osvojenih bodova na ispitu</th>
+        </tr>
+        <tbody>
+          <tr>
+            <td>1.</td>
+            <td>Maja</td>
+            <td>Majić</td>
+            <td>Web dizajnerica</td>
+            <td>98</td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>Pero</td>
+            <td>Perić</td>
+            <td>Poštar</td>
+            <td>82</td>
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td>Ana</td>
+            <td>Aničić</td>
+            <td>Nastavnica</td>
+            <td>76</td>
+          </tr>
+          <tr>
+            <td>4.</td>
+            <td>Mirko</td>
+            <td>Mirkovski</td>
+            <td>Saborski zastupnik u mirovini</td>
+            <td>75</td>
+          </tr>
+          <tr>
+            <td>5.</td>
+            <td>Ivan</td>
+            <td>Ivančević</td>
+            <td>Student</td>
+            <td>74</td>
+          </tr>
+        </tbody>
+      </thead>
+    </table>
+
+    <hr>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Namirnica</th>
+          <th>Količina</th>
+          <th>Predviđena potrošnja</th>
+        </tr>
+        <tbody>
+          <tr>
+            <td>Trešnje</td>
+            <td>5kg</td>
+            <td>100kn</td>
+          </tr>
+          <tr>
+            <td>Breskve</td>
+            <td>2kg</td>
+            <td>20kn</td>
+          </tr>
+          <tr>
+            <td>Marelice</td>
+            <td>2kg</td>
+            <td>30kn</td>
+          </tr>
+          <tr>
+            <td>Ukupno</td>
+            <td>9kg</td>
+            <td>150kn</td>
+          </tr>
+        </tbody>
+      </thead>
+    </table>
+
+    <hr>
+
+    <table>
+      <tbody>
+        <tr>
+          <td colspan="3">
+            red  ćelija 1
+          </td>
+        </tr>
+        <tr>
+          <td>
+            red 2 ćelija 4
+          </td>
+          <td>
+            red 2 ćelija 5
+          </td>
+          <td>
+            red 2 ćelija 6
+          </td>
+        </tr>
+        <tr>
+          <td>
+            red 3 ćelija 7
+          </td>
+          <td colspan="2">
+            red 3 ćelija 8
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr>
+
+    <table>
+      <tr>
+        <td rowspan="3">
+          red 1 ćelija 1
+        </td>
+        <td>
+          red 1 ćelija 2
+        </td>
+        <td>
+          red 1 ćelija 3
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="2">red 2 ćelija 5</td>
+        <td>red 2 ćelija 6</td>
+      </tr>
+
+      <tr>
+        <td>red 3 ćelija 9</td>
+      </tr>
+    </table>
+
   </body>
 </html>
