@@ -11,6 +11,7 @@ a {
   text-decoration: none;
   color: initial;
 }
+
 .header__inner {
   width: 1280px;
   margin: 0 auto;
@@ -29,29 +30,35 @@ a {
   height: 100%;
   object-fit: contain;
 }
+
 .header__nav {
   display: flex;
   color: #ffffff;
   font-weight: 600;
   text-transform: uppercase;
 }
+
 .header__link {
   margin-right: 48px;
   color: #ffffff;
 }
+
 .header__link:last-child {
   margin-right: 0px;
 }
+
 .hero {
   position: relative;
   width: 100%;
   height: calc(100vh - 80px);
 }
+
 .hero__image {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 .hero__overlay {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.487);
@@ -60,6 +67,7 @@ a {
   top: 0;
   left: 0;
 }
+
 .hero__content {
   position: absolute;
   top: 50%;
@@ -76,4 +84,40 @@ a {
 .hero__subheading {
   font-size: 24px;
   width: 884px;
+}
+
+.section {
+  color: #000;
+}
+
+.section.section_dark {
+  background: rgb(43, 30, 30);
+  color: #ffffff;
+}
+
+.section__inner {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 120px 0;
+}
+
+.section__title {
+  font-size: 56px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.section__description {
+  text-align: center;
+  max-width: 860px;
+  margin: auto;
+  line-height: 150%;
+  font-size: 22px;
+}
+.section.section_dark .section__title {
+  color: #ffffff;
+}
+
+.section.section_dark .section__description {
+  color: #ffffff;
 }
