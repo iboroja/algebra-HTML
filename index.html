@@ -8,43 +8,161 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="header__inner">
-        <figure class="header__figure">
-          <img class="header__image" src="./images/logo.jpg" alt="logo" />
-        </figure>
-
-        <nav class="header__nav">
-          <a href="#" class="header__link">home</p>
-          <a href="#" class="header__link">about</p>
-          <a href="#" class="header__link">contact us</p>
-        </nav>
-      </div>
-    </header>
-
+    <header></header>
     <main>
-      <section class="hero">
-        <img class="hero__image" src="./images/hero.png" alt="hero image">
-        <div class="hero__overlay"></div>
-        <div class="hero__content">
-          <h1 class="hero__title">Welcome to my Web</h1>
-          <p class="hero__subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam unde, sint tempora consectetur ipsam, aut rem ex quidem velit beatae minus quibusdam saepe deserunt. Ab laudantium eius placeat ipsum minima!</p>
+      <form action="" method="post" class="form">
+        <div class="form__row">
+          <label for="nameAndSurname" class="form__label">Ime i prezime</label>
+          <input
+            type="text"
+            class="form_input"
+            placeholder="Vaše ime"
+            id="nameAndSurname"
+            name="nameAndSurname"
+            required
+          />
         </div>
-      </section>
-      <section class="section">
-       <div class="section__inner">
-        <h2 class="section__title">About us</h2>
-        <p class="section__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, quasi, tempora fugit maxime dignissimos molestias voluptates quibusdam ab earum soluta dolorem alias veritatis totam at laboriosam modi omnis, culpa rerum!</p>
-       </div>
-      </section>
-      <section class="section section_dark">
-        <div class="section__inner">
-         <h2 class="section__title">Contact us</h2>
-         <p class="section__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, quasi, tempora fugit maxime dignissimos molestias voluptates quibusdam ab earum soluta dolorem alias veritatis totam at laboriosam modi omnis, culpa rerum!</p>
+        <div class="form__row">
+          <label for="email" class="form__label">Email adresa</label>
+          <input
+            type="email"
+            class="form_input"
+            id="email"
+            name="email"
+            required
+          />
         </div>
-       </section>
-    </main>
+        <div class="form__row">
+          <label for="phone" class="form__label">Broj telefona</label>
+          <input
+            type="tel"
+            class="form_input"
+            id="phone"
+            name="phone"
+            pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+          />
+        </div>
+        <div class="form__row">
+          <label for="password" class="form__label">Password</label>
+          <input
+            type="password"
+            class="form_input"
+            placeholder="Lozinka"
+            id="password"
+            name="password"
+            disabled
+          />
+        </div>
+        <div class="form__row">
+          <label for="color" class="form__label">Color</label>
+          <input type="color" class="form_input" id="color" name="color" />
+        </div>
+        <div class="form__row form__row_checkbox">
+          <label for="newsletter" class="form__label">
+            <input
+              type="checkbox"
+              class="form_input"
+              placeholder="Lozinka"
+              id="newsletter"
+              name="newsletter"
+            />Želim se pretplatiti na newsletter</label
+          >
+        </div>
+        <div class="form__row form__row_radio">
+          <div class="form__option">
+            <label for="ocjena1" class="form__label form__label_inline"
+              >1</label
+            >
+            <input
+              type="radio"
+              class="form_input"
+              id="ocjena1"
+              name="ocjena"
+              value="1"
+              onclick="playAudio()"
+            />
+          </div>
+          <div class="form__option">
+            <label for="ocjena2" class="form__label form__label_inline"
+              >2</label
+            >
+            <input
+              type="radio"
+              class="form_input"
+              id="ocjena2"
+              name="ocjena"
+              value="2"
+            />
+          </div>
+          <div class="form__option">
+            <label for="ocjena3" class="form__label form__label_inline"
+              >3</label
+            >
+            <input
+              type="radio"
+              class="form_input"
+              id="ocjena3"
+              name="ocjena"
+              value="3"
+            />
+          </div>
+        </div>
+        <div class="form__row">
+          <label for="dokument" class="form__label">Priložite dokument</label>
+          <input type="file" id="dokument" />
+        </div>
 
+        <div class="form__row">
+          <label for="date" class="form__label">Odaberi datum</label>
+          <input
+            type="date"
+            class="form_input"
+            placeholder="Lozinka"
+            id="date"
+            name="date"
+            value="2022-12-05"
+          />
+        </div>
+
+        <div class="form__row">
+          <label for="textarea" class="form__label">Vaša poruka</label>
+          <textarea id="textarea" name="textarea" rows="4" cols="50">
+          </textarea>
+        </div>
+
+        <div class="form__row">
+          <label for="seminar">Odaberite seminar:</label>
+          <select id="seminar" name="seminar">
+            <option value="pariz">Pariz</option>
+            <option value="rim">Rim</option>
+            <option value="zagreb">Zagreb</option>
+            <option value="london">London</option>
+          </select>
+        </div>
+
+        <div class="form__row">
+          <label for="myBrowser">Choose a browser from this list:</label>
+          <input list="browsers" id="myBrowser" name="myBrowser" />
+          <datalist id="browsers">
+            <option value="Chrome"></option>
+            <option value="Firefox"></option>
+            <option value="Internet Explorer"></option>
+            <option value="Opera"></option>
+            <option value="Safari"></option>
+            <option value="Microsoft Edge"></option>
+          </datalist>
+        </div>
+        <audio
+          type="audio/mpeg"
+          src="zidareva ljubav.mp3"
+          controls
+          id="audio"
+        ></audio>
+        <button>Pošalji podatke</button>
+        <button type="reset">Poništi obrazac</button>
+      </form>
+    </main>
     <footer></footer>
   </body>
+  <script src="script.js"></script>
 </html>
