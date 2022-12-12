@@ -1,168 +1,137 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta name="description" content="test" />
+    <title>Test</title>
   </head>
   <body>
-    <header></header>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
-      <form action="" method="post" class="form">
-        <div class="form__row">
-          <label for="nameAndSurname" class="form__label">Ime i prezime</label>
-          <input
-            type="text"
-            class="form_input"
-            placeholder="Vaše ime"
-            id="nameAndSurname"
-            name="nameAndSurname"
-            required
-          />
-        </div>
-        <div class="form__row">
-          <label for="email" class="form__label">Email adresa</label>
-          <input
-            type="email"
-            class="form_input"
-            id="email"
-            name="email"
-            required
-          />
-        </div>
-        <div class="form__row">
-          <label for="phone" class="form__label">Broj telefona</label>
-          <input
-            type="tel"
-            class="form_input"
-            id="phone"
-            name="phone"
-            pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
-          />
-        </div>
-        <div class="form__row">
-          <label for="password" class="form__label">Password</label>
-          <input
-            type="password"
-            class="form_input"
-            placeholder="Lozinka"
-            id="password"
-            name="password"
-            disabled
-          />
-        </div>
-        <div class="form__row">
-          <label for="color" class="form__label">Color</label>
-          <input type="color" class="form_input" id="color" name="color" />
-        </div>
-        <div class="form__row form__row_checkbox">
-          <label for="newsletter" class="form__label">
-            <input
-              type="checkbox"
-              class="form_input"
-              placeholder="Lozinka"
-              id="newsletter"
-              name="newsletter"
-            />Želim se pretplatiti na newsletter</label
-          >
-        </div>
-        <div class="form__row form__row_radio">
-          <div class="form__option">
-            <label for="ocjena1" class="form__label form__label_inline"
-              >1</label
-            >
-            <input
-              type="radio"
-              class="form_input"
-              id="ocjena1"
-              name="ocjena"
-              value="1"
-              onclick="playAudio()"
-            />
-          </div>
-          <div class="form__option">
-            <label for="ocjena2" class="form__label form__label_inline"
-              >2</label
-            >
-            <input
-              type="radio"
-              class="form_input"
-              id="ocjena2"
-              name="ocjena"
-              value="2"
-            />
-          </div>
-          <div class="form__option">
-            <label for="ocjena3" class="form__label form__label_inline"
-              >3</label
-            >
-            <input
-              type="radio"
-              class="form_input"
-              id="ocjena3"
-              name="ocjena"
-              value="3"
-            />
-          </div>
-        </div>
-        <div class="form__row">
-          <label for="dokument" class="form__label">Priložite dokument</label>
-          <input type="file" id="dokument" />
-        </div>
+      <h1>Parcijalni ispit</h1>
+      <section>
+        <h2>Naslov 1</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+          veritatis culpa quaerat tempore, et eum nesciunt recusandae non, magni
+          pariatur repellendus quas qui commodi reiciendis? Architecto vel enim
+          doloribus fugit!
+        </p>
+      </section>
+      <hr />
+      <section>
+        <h2>Cjenik</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Exercitationem quisquam autem consequatur maiores alias. Doloribus
+          sint fugiat et enim nemo nulla. Nisi laborum facilis delectus ex enim
+          atque odio. Nulla!
+        </p>
+        <table style="border: 2px solid black">
+          <caption>
+            Cjenik parkinga na dan 9.12.2022.
+          </caption>
+          <thead>
+            <tr>
+              <th>Broj dana</th>
+              <th>Cijena</th>
+            </tr>
+          </thead>
 
-        <div class="form__row">
-          <label for="date" class="form__label">Odaberi datum</label>
-          <input
-            type="date"
-            class="form_input"
-            placeholder="Lozinka"
-            id="date"
-            name="date"
-            value="2022-12-05"
-          />
-        </div>
+          <tbody>
+            <tr>
+              <td>1. dan</td>
+              <td>100$</td>
+            </tr>
+            <tr>
+              <td>2. dan</td>
+              <td>900$</td>
+            </tr>
+            <tr>
+              <td>3. dan</td>
+              <td>1500$</td>
+            </tr>
+            <tr>
+              <td>4. dan</td>
+              <td>2000$</td>
+            </tr>
+            <tr>
+              <td>5. dan</td>
+              <td>2500$</td>
+            </tr>
+          </tbody>
 
-        <div class="form__row">
-          <label for="textarea" class="form__label">Vaša poruka</label>
-          <textarea id="textarea" name="textarea" rows="4" cols="50">
-          </textarea>
-        </div>
+          <tfoot>
+            <tr>
+              <td colspan="2">Svaki dodatni dan naplaćuje se 1000$</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
 
-        <div class="form__row">
-          <label for="seminar">Odaberite seminar:</label>
-          <select id="seminar" name="seminar">
-            <option value="pariz">Pariz</option>
-            <option value="rim">Rim</option>
-            <option value="zagreb">Zagreb</option>
-            <option value="london">London</option>
-          </select>
-        </div>
+      <hr />
 
-        <div class="form__row">
-          <label for="myBrowser">Choose a browser from this list:</label>
-          <input list="browsers" id="myBrowser" name="myBrowser" />
-          <datalist id="browsers">
-            <option value="Chrome"></option>
-            <option value="Firefox"></option>
-            <option value="Internet Explorer"></option>
-            <option value="Opera"></option>
-            <option value="Safari"></option>
-            <option value="Microsoft Edge"></option>
-          </datalist>
+      <section>
+        <h2>Kontakt</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi libero
+          provident tempora laudantium, maiores similique sunt placeat
+          recusandae facere illo minima ducimus neque velit accusamus obcaecati
+          veniam quam dicta quae.
+        </p>
+        <div class="contact_form">
+          <form action="#" method="get">
+            <label for="firstName">Ime i Prezime*</label><br />
+            <input type="text" id="firstName" name="firstName" required />
+            <br /><br />
+
+            <label for="email">Email*</label><br />
+            <input type="text" id="email" name="email" required />
+            <br /><br />
+
+            <label for="year">Godina rođenja</label><br />
+            <select name="year" id="year">
+              <option value="1990">1990</option>
+              <option value="2000">2000</option>
+              <option value="2010">2010</option>
+              <option value="2020">2020</option>
+            </select>
+            <br /><br />
+
+            <label for="textArea">Sadržaj*</label><br />
+            <textarea
+              name="textArea"
+              id="textArea"
+              rows="10"
+              cols="30"
+              required
+            ></textarea>
+            <br /><br />
+
+            <button>POŠALJI</button>
+          </form>
         </div>
-        <audio
-          type="audio/mpeg"
-          src="zidareva ljubav.mp3"
-          controls
-          id="audio"
-        ></audio>
-        <button>Pošalji podatke</button>
-        <button type="reset">Poništi obrazac</button>
-      </form>
+      </section>
     </main>
-    <footer></footer>
+    <footer>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+        <p>Copyright &#174; 2022</p>
+      </ul>
+    </footer>
   </body>
-  <script src="script.js"></script>
 </html>
